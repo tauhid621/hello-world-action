@@ -4,7 +4,7 @@
   "tier": "Free"
  },
  "properties": {
-  "displayName": "Use match condition on tag value.",
+  "displayName": "Use match condition on tag value",
   "policyDefinitionId": "/subscriptions/c00d16c7-6c1f-4c03-9be1-6934a4c49682/providers/Microsoft.Authorization/policyDefinitions/606d41f6-a0f3-416a-b0e5-a9ba5f5a904d",
   "scope": "/subscriptions/c00d16c7-6c1f-4c03-9be1-6934a4c49682",
   "notScopes": [],
