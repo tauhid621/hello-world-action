@@ -1,0 +1,26 @@
+{
+ "properties": {
+  "displayName": "Use match condition on tag value.",
+  "policyType": "Custom",
+  "mode": "All",
+  "description": "Enforce a text pattern on tag value.",
+  "metadata": {
+   "category": "Stream Analytics"
+  },
+  "parameters": {},
+  "policyRule": {
+   "if": {
+    "not": {
+     "field": "tags.date",
+     "match": "##-???-####"
+    }
+   },
+   "then": {
+    "effect": "audit"
+   }
+  }
+ },
+ "id": "/subscriptions/c00d16c7-6c1f-4c03-9be1-6934a4c49682/providers/Microsoft.Authorization/policyDefinitions/606d41f6-a0f3-416a-b0e5-a9ba5f5a904d",
+ "type": "Microsoft.Authorization/policyDefinitions",
+ "name": "606d41f6-a0f3-416a-b0e5-a9ba5f5a904d"
+}

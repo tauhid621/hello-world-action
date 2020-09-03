@@ -1,0 +1,27 @@
+name: manage-azure-policy-c76cb733
+on:
+  push:
+    paths:
+      - policyExported/policies/Web-Application-should-only-be-accessible-over-HTTPS_a4af4a39-4135-47fb-b175-47fbdf85311d/**
+      - policyExported/policies/Web-Application-should-only-be-accessible-over-HTTPS_b1a1c6cf-23a8-40aa-aaed-acf16547e402/**
+      - policyExported/policies/Web-Application-should-only-be-accessible-over-HTTPS-[Custom]_e4ed8da0-be44-47ba-b654-78994a69a3/**
+      - policyExported/policies/Use-match-condition-on-tag-value._606d41f6-a0f3-416a-b0e5-a9ba5f5a904d/**
+      - .github/workflows/manage-azure-policy-c76cb733.yml
+jobs:
+  apply-azure-policy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Login to Azure
+      uses: azure/login@v1
+      with:
+        creds: ${{secrets.AZURE_CREDENTIALS_c76cb733}}
+    - name: Create or Update Azure Policies
+      uses: azure/manage-azure-policy@v0
+      with:
+        paths: |
+          policyExported/policies/Web-Application-should-only-be-accessible-over-HTTPS_a4af4a39-4135-47fb-b175-47fbdf85311d/**
+          policyExported/policies/Web-Application-should-only-be-accessible-over-HTTPS_b1a1c6cf-23a8-40aa-aaed-acf16547e402/**
+          policyExported/policies/Web-Application-should-only-be-accessible-over-HTTPS-[Custom]_e4ed8da0-be44-47ba-b654-78994a69a3/**
+          policyExported/policies/Use-match-condition-on-tag-value._606d41f6-a0f3-416a-b0e5-a9ba5f5a904d/**
