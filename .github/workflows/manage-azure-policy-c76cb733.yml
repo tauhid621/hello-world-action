@@ -1,4 +1,4 @@
-name: manage-azure-policy-c76cb733
+name: manage-azure-policy-c76cb7334
 on:
   push:
     paths:
