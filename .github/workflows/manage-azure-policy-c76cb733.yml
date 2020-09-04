@@ -6,7 +6,7 @@ on:
       - policyExported/policies/Web-Application-should-only-be-accessible-over-HTTPS_b1a1c6cf-23a8-40aa-aaed-acf16547e402/**
       - policyExported/policies/Web-Application-should-only-be-accessible-over-HTTPS-[Custom]_e4ed8da0-be44-47ba-b654-78994a69a3/**
       - policyExported/policies/Use-match-condition-on-tag-value._606d41f6-a0f3-416a-b0e5-a9ba5f5a904d/**
-      - policyExported/policies/[Custom-test-third]Web-Application-should-only-be-accessible-over-HTTPS_e4ed8da0-be44-47ba-b654-78994a69a3/**
+      - policyExported/policies/[Custom-test-third-fourth]Web-Application-should-only-be-accessible-over-HTTPS_e4ed8da0-be44-47ba-b654-78994a69a3/**
       - .github/workflows/manage-azure-policy-c76cb733.yml
 jobs:
   apply-azure-policy:
