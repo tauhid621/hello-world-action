@@ -1,4 +1,4 @@
-"name: test-vars
+name: test-vars
 
 on: 
   workflow_dispatch:
