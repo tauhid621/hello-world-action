@@ -1,0 +1,16 @@
+"name: test-vars
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  display-variables:
+    runs-on: ubuntu-latest
+    environment: dev
+    steps:        
+    - name: Use variables
+      run: |
+        echo ""repo variable : ${{ vars.TEST_REPO_VAR }}""
+        echo ""org variable : ${{ vars.TEST_ORG_VAR }}""
+        echo ""overriden variable : ${{ vars.OVERRIDE_VAR }}""
+        echo ""env variable : ${{ vars.ENV_VAR }}"""			
